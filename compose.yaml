@@ -4,7 +4,7 @@ services:
     container_name: ${IMAGES_PREFIX:-}-app-php
     restart: unless-stopped
     env_file:
-     - .env
+     - .env.local
     volumes:
       - caddy_data:/data
       - caddy_config:/config
